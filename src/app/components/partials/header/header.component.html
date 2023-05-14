@@ -1,0 +1,38 @@
+<header class="position-sticky top-0 z-1">
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-2">
+                <a routerLink="">
+                    <h4 id="logo" class="mb-0">Re<span class="highlight">Mo</span>Jo</h4>
+                </a>
+            </div>
+
+            <div class="col-10">
+                <nav class="navbar navbar-expand-sm float-end">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="/jobs">Stellenangebote</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Für Unternehmen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Über Uns</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <triangle [points]="pointsBelowHeader" [fill]="primary"></triangle>
+</header>

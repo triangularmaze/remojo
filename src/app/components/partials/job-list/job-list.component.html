@@ -1,0 +1,18 @@
+<div *ngIf="postings">
+    <app-search class="me-3" [include_clear]="include_clear"></app-search>
+
+    <div *ngFor="let posting of postings" class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 ps-0">
+                <a routerLink="/posting/{{posting.id}}">{{posting.title}}</a>
+            </div>
+            <div id="company" class="col-sm-12 col-md-2 ps-0">
+                <a href="#">{{posting.company}}</a>
+            </div>
+            <div class="col-sm-12 col-md-2 pe-0 text-end">{{posting.date | date: "longDate"}}</div>
+            <hr>
+        </div>
+    </div>
+
+    <button-default *ngIf="homepage" class="float-end" link="/jobs" text="Mehr" [icon]="icon"></button-default>
+</div>

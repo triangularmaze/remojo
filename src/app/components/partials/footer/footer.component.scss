@@ -1,0 +1,20 @@
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+
+    a{
+        color: white;
+    }
+
+    h5{
+        font-family: "Lobster";
+        color: var(--text-highlight);
+    }
+}

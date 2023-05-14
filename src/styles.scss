@@ -1,0 +1,70 @@
+// fonts
+@font-face{
+    font-family: "Inter";
+    //src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    src: url("assets/fonts/Inter-Regular.ttf");
+}
+@font-face{
+    font-family: "Lobster";
+    //src: url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    src: url("assets/fonts/Lobster-Regular.ttf");
+}
+
+// (global) variables
+:root{
+    // images
+    --laptop-couch: url("assets/images/laptop-couch.jpg");
+
+    // colours
+    --primary: #E6EED6;
+    --primary-light: #DDE2C6;
+    --primary-dark: #CBD2C0;
+    --accent: #D81E5B;
+    --background: #FFFFFF;
+    --text-primary: #090C02;
+    --text-secondary: #E2E2E2;
+    --text-highlight: #45C1FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+h2{
+    font-weight: bolder;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+a:hover{
+    color: var(--text-highlight);
+}
+
+.important-link{
+    color: var(--text-highlight);
+    font-size: 16pt;
+    font-weight: bold;
+
+    & span{
+        margin-right: 1rem;
+    }
+}
+
+i{
+    font-family: "Arial", sans-serif;
+}

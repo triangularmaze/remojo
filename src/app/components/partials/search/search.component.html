@@ -1,0 +1,5 @@
+<div>
+    <input #s type="text" placeholder="Jobbezeichnung" (keyup.enter)="search(s.value)" [value]="searchTerm" />
+    <button (click)="search(s.value)">Suche</button>
+    <button *ngIf="include_clear" (click)="clear()">Clear</button>
+</div>

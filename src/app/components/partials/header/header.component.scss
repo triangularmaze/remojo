@@ -1,0 +1,14 @@
+
+header{
+    background-color: var(--primary);
+}
+
+#logo{
+    font-family: "Lobster";
+    color: var(--accent);
+
+    .highlight{
+        font-family: inherit;
+        color: var(--text-highlight);
+    }
+}

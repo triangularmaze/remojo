@@ -1,0 +1,54 @@
+<main>
+
+    <div id="section-1">
+        <div class="flex-container">
+            <div class="flex-item-left text-center p-5">
+                <h1 class="m-4">Finde deinen <span>Remote</span> Traumjob</h1>
+                <p class="m-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore.</p>
+                <a class="important-link" routerLink="/jobs">
+                    <span>Stellenangebote</span>
+                    <i>&#x2192;</i>
+                </a>
+            </div>
+            <div class="flex-item-right"></div>
+        </div>
+    </div>
+
+    <triangle id="triangleSection2" class="w-100 d-block" [style.height]="triangleContainerHeight"
+        [style.position]="absolute" [style.bottom]="0" [points]="pointsSection2" [fill]="primary"
+        [height]="triangleHeight" [bottom]="triangleBottom">
+    </triangle>
+
+    <div id="section-2">
+        <div class="container p-5">
+            <h2>Die neuesten Jobs</h2>
+            <job-list [homepage]="true"></job-list>
+        </div>
+    </div>
+
+    <triangle id="triangleSection3" class="w-100 d-block" [style.height]="triangleContainerHeight"
+        [style.backgroundColor]="primary" [points]="pointsSection2" [fill]="accent" [height]="triangleHeight"
+        [bottom]="triangleBottom">
+    </triangle>
+
+    <div id="section-3">
+        <div class="container p-5">
+            <div class="row align-items-center">
+                <div class="col">
+                    <img class="w-100 rounded-circle" src="../../../../assets/images/company.jpg" />
+                </div>
+                <div class="col">
+                    <h2 class="fancy">Unternehmen sagen...</h2>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

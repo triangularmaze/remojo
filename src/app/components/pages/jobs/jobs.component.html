@@ -1,0 +1,13 @@
+<main>
+    <div class="section pt-5 pb-5">
+        <h2 class="text-center">Stellenangebote</h2>
+    </div>
+
+    <triangle class="w-100 d-block" [style.height]="triangleContainerHeight" [style.position]="position"
+        [style.bottom]="0" [points]="points" [fill]="primary" [height]="triangleHeight" [style.bottom]="bottom">
+    </triangle>
+
+    <div class="container p-5">
+        <job-list [include_clear]="true"></job-list>
+    </div>
+</main>
